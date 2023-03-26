@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin Panel | login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="quick.go-admin.cn/demo/sword/assets/login/dist/all.min.css">
+
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="ginx-logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="ginx-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ginx-logo.png">
+
+
+</head>
+
+<body>
+<div class="main">
+    <div class="box">
+            <div class="form">
+
+
+                <h2><img class="logo" src="ginx-logo.png"> Admin Panel</h2>
+
+                <div class="err">
+                <% if(messages.error){%> <%=messages.error%>
+                    <% }%>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="name" required value="" id="formname">
+                    <span>Username</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="password" required value="" id="formpassword">
+                    <span>Password</span>
+                    <i></i>
+                </div>
+                <input type="submit" value="Login">
+            </div>
+        </div>
+
+        <div class="info">
+            <p>
+                    <small>&copy; 2023 All Rights Reserved. Ginx Admin</small>
+                </p>
+            
+        </div> 
+</div>
+        
+    
+
+    <div id="particles-js">
+        <canvas class="particles-js-canvas-el" width="1606" height="1862" style="width: 100%; height: 100%;"></canvas>
+    </div>
+
+    <script src="quick.go-admin.cn/demo/sword/assets/login/dist/all.min.js"></script>
+
+</body>
+
+</html>
